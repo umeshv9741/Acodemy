@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PAGE</title>
+    <style>
+        body{
+            background-image: url("css img.jpg");
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 45px;
+            color: rgb(222, 242, 43);
+            padding: 75px;
+        }
+        p{
+            margin: 45px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>INTRODUCTION TO CSS</h1>
+ <b><P>CSS (Cascading Style Sheets) is for the
+        formatting side of the Web
+        • CSS describes how rendered HTML documents
+        should look
+        • CSS considers the physical and visual display of
+        the document (the Style)</P></b> 
+    <h1>ADVANTAGES OF CSS</h1>
+   <b><P>Advantages of CSS
+        • The use of CSS separates document layout from document content Different people can be responsible for the two parts Document author can focus on content
+          Graphic designer can focus on layout
+        • A single file can control the look of an entire web
+        site Easy to modify look of web site without affecting its contents Easy to obtain a consistent look (the R in CRAP)
+        • If done correctly, documents degrade gracefully
+        on platforms that don't support visual formatting</P></b> 
+        <h1>DISADVANTAGES OF CSS</h1>
+        <b><p>Disadvantages of CSS
+            • More to learn CSS is powerful but complex
+            • Not fully supported on some browsers Even some modern browsers are not fully CSS 2 compliant
+            • The formatting is separated from the document Makes it hard to write a document and format it simultaneously</p></b>
+            <h1>TYPES OF SELECTOR IN CSS</h1>
+            <b><p>CSS with Class
+            • (Almost) all HTML tags can have an optional
+            CLASS attribute
+            • This works nicely in conjunction with CSS:
+            <style type=”text/css”>
+            p.blogentry {
+                font-size: 12pt;
+                font-family: “Luxi Serif”, serif;
+                }
+                </style>
+                ...
+                <p class=”blogentry”>
+                Today was the best day ever ...
+                </p>
+            </p>
+            <p>CSS with IDs
+                • Similarly, almost all HTML tags can have an ID
+                attribute:
+                <style type=”text/css”>
+                #menubar {
+                font-size: 12pt;
+                font-family: “Luxi Serif”, serif;
+                }
+                </style>
+                
+            <ul id=”menubar”>
+                <li>Item 1</li> ...
+            </ul></p>
+                <p>Notes on CLASS and ID
+                • Use CLASS when a document contains (or may contain) many items of this type  E.g.: blogEntry, nameList, properName
+                • Use ID when a document can only contain one item of this type  E.g. pageTitle, mainNavigationBar
+                • Choose CLASS and ID names wisely Good: <a id=”properName”>Pat Morin</a> Bad: <a id=”blueunderlinenowrap”>Pat Morin</a></p>
+                    <h1>DIFFERENT TAGS IN CSS</h1>
+                    <p>The DIV and SPAN tags
+                    • HTML has 2 tags, DIV and SPAN, that are specifically used with CSS and CLASS and ID attributes 
+                    • A DIV tag contains a block of text Like a paragraph, section heading, or title
+                    • A SPAN tag contains a short piece of text within a block Like a proper name, or a dollar amount 15 Example of DIV and SPAN
+                    <div class=”mainDocument”>
+                    On his way to school,
+                    <span class=”properName”>Uncle Rico</span>
+                    stopped at the local groceteria and spent
+                    <span class=”money”>$4.55</span> on milk,bread, and honey.
+                    </div>
+                    <div class=”about”>
+                    This document was written by
+                    <span class=”properName”>Pedro Sanchez</span>
+                    on <span class=”date”>Jan. 9th, 2007</span>.
+                    </div>
+                        <b><p>Example of DIV and SPAN
+                            <div class=”mainDocument”>
+                            On his way to school,
+                            <span class=”properName”>Uncle Rico</span>
+                            stopped at the local groceteria and spent
+                            <span class=”money”>$4.55</span> on milk,
+                            bread, and honey.
+                            </div>
+                            <div class=”about”>
+                            This document was written by
+                            <span class=”properName”>Pedro Sanchez</span>
+                            on <span class=”date”>Jan. 9th, 2007</span>.
+                            </div></p></b>
+                            <b><p>Typeface: font-family
+                                • Consists of a comma-separated list of font names
+                                h1 { font-family: “Times New Roman”,“ Luxi Serif”,“ DejaVu LGC Serif”,serif;}
+                                • Not all fonts are available on all systems Browser will try fonts in order that they are specified
+                                • Always make the last option one of the generic fonts: serif, sans-serif, cursive, fantasy, or monospace</p></b>
+                                <b><p>Font Size: font-size
+                                    • Specified in one of the CSS size units item is the width of a letter m (relative to surrounding text)1pt is a standard typographic point (1/72 inches 1px is one screen pixel 
+                                    Keywords: xx-small, x-small, small, medium, large,x-large, xx-large are browser dependant Percentages: XXX% relative to the surrounding code
+                                    • Points and pixels are extremely accurate but not
+                                    resizeable
+                                    h1 { font-size: 200%; }
+                                    h2 { font-size: large; }
+                                    h3 { font-size: medium; }</p></b>
+                                    <b><p>Bold Fonts: font-weight
+                                        • Can be one of normal, bold, bolder,
+                                        lighter, 100, 200, ..., 900
+                                        h1 { font-weight: bold;
+                                         font-size: 200%;
+                                        }
+                                        h2 { font-weight: bold;
+                                         font-size: medium;
+                                        }</p></b>
+</body>
+</html>
